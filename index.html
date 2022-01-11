@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-BOOK</title>
+    <link rel="stylesheet" href="/html-project-main/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;600&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+
+<!--header-->
+    <header class="header">
+        <div class="container">
+        <div class="header-top">
+           <div class="header__inner-box">
+                    <a href="#" class="logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>   
+                    <p class="address"> г. Санкт-Петербург, <br>
+                        наб. Pеки Карповки, 5 корпус П
+                </p>
+            </div>
+                    <form class="search-form" name="search-form" action="#" method="get">
+                        <p class="text-wrap">
+                            <input type="search" name="search-filed" id="search-filed" maxlength="250" placeholder="Поиск по полке">
+                            <a href="#" class="search-btn">
+                            </a>
+                        </p>
+                    </form>
+        
+                <div class="cart">
+                    <a href="#" class="cart-link">
+                     <img src="img/icons/Cart.svg" alt="Cart">
+                      </a>
+                 </div>  
+    </div>
+</div>
+           
+                <div class="header-bottom">
+                    <div class="container">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Каталог книг</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Оплата и доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav> 
+                    <ul class="user-menu-item">
+                        <li class="user-menu-item">
+                        <a href="#" class="registry-link">Регистрация</a>
+                    </li>
+                    <li class="user-menu-item">
+                        <a href="#" class="login-link">Вход</a>
+                    </li>
+                    </ul>
+                         </div>   
+                    </div>
+                </div>   
+    </header>
+     <main>
+         <!--скрытый h1- заголовок страницы--> 
+         <h1 class="visually-hidden"> По полочкам - лучший интернет-магазин книг в г.Санкт-Петербург</h1>
+        <section class="promo"> 
+                <div class="container"> 
+                    <!--обертка слайдера-->      
+                    <div class="promo-slider-wrap">
+            <!--сильно упрощенная для понимания вёрстка кнопки-->   
+            <button class="slider-button slider-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span> 
+            </button>
+             <!--сам слайдер - список слайдов-->   
+             <ul class="slider">
+                 <!--первый слайд-->
+                 <li class="slide slide-1">
+                     <h2 class="slide-title">Бестселлер для самых умных и продвинутых</h2>
+                    <p class="slide-text">Книга научит вас писать, читать, говорить по-новому.<br> Авторы на конкретных примерах показывают, что такое хорошо и что такое плохо в информационных, рекламных, журналистских и публицистических текстах.</p>
+                    <a href="#" class="slide-link">Подробнее</a>   
+                 </li>
+                 <!--второй слайд-->
+                 <li class="slide slide-2">
+                     <h2 class="slide-title">Заголовок слайда 2</h2>
+                    <p class="slide-text">Описание слайда 2</p>
+                    <a href="#" class="slide-link">Подробнее</a>   
+                 </li>
+             </ul>
+             <button class="slider-button slider-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span> 
+            </button>
+             <!--список кнопок-контроллов-->
+             <ul class="controls">
+                 <li class="control">
+                     <button class="control-button" type="button">
+                         <span class="visually-hidden">1 слайд</span>
+                     </button>
+                 </li>
+                 <li class="control">
+                     <button class="control-button" type="button">
+                         <span class="visually-hidden">2 слайд</span>
+                     </button>
+                 </li>
+                 <li class="control">
+                     <button class="control-button" type="button">
+                         <span class="visually-hidden">3 слайд</span>
+                     </button>
+                 </li>
+             </ul>
+        </div>             
+        </section>
+
+                <!-- Секция Новинки книг (каталог)-->
+        <section class="new-books">
+            <div class="container">
+                    <h2 class="new-books-title">Новинки</h2>
+                <ul class="books-list">
+                     <!--первая книга-->
+                    <li class="book">
+                        <p class="book-rating">
+                            <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+                        <span class="book-rating-value">3.5</span>
+                         </p>
+                        <!--рейтинг-->
+                        <!--картинка-->
+                        <img src="img/new/live.jpg" width="275" height="320" alt="Жизнь в удовольствие" class="book-img">
+                        <p class="book-author">Палиенко А.</p>
+                        <h2 class="book-title">Жизнь в удовольствиe</h2>
+                        <p class="book-text">Автор собрал в этой книге все свои знания, актуальные в современном мире</p>
+                        <div class="book-buttons-wrap">
+                         <a href="#" class="book-link">Подробнее</a>
+                         <p class="books-pages">208 страниц</p>
+                        </div>
+                        </li>
+                     <!--вторая книга-->
+                    <li class="book">
+                        <p class="book-rating">
+                            <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                        <span class="book-rating-value">4.8</span>
+                         </p>
+                        <img src="img/new/kingdom.jpg" width="275" height="320" alt="Королевство" class="book-img">
+                        <p class="book-author">Несбё Ю.</p>
+                        <h2 class="book-title">Королевство</h2>
+                        <p class="book-text">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
+                        <div class="book-buttons-wrap">
+                         <a href="#" class="book-link">Подробнее</a>
+                         <p class="books-pages">576 страниц</p>
+                         </div>
+                        </li>
+                     <!--третья книга-->
+                    <li class="book">
+                        <p class="book-rating">
+                            <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                        <span class="book-rating-value">3.9</span>
+                         </p>
+                        <img src="img/new/transhumanism.jpg" width="275" height="320" alt="Transhumanism inc." class="book-img">
+                        <p class="book-author">Пелевин В.</p>
+                        <h2 class="book-title">Transhumanism inc.</h2>
+                        <p class="book-text">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+                        <div class="book-buttons-wrap">
+                         <a href="#" class="book-link">Подробнее</a>
+                         <p class="books-pages">608 страниц</p>
+                        </div>
+                        </li>
+                     <!--четвертая книга-->
+                    <li class="book">
+                        <p class="book-rating">
+                            <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                        <span class="book-rating-value">4.1</span>
+                         </p>
+                        <img src="img/new/shame.jpg" width="275" height="320" alt="Чувство стыда" class="book-img">
+                        <p class="book-author">Санд И.</p>
+                        <h2 class="book-title">Чувство стыда</h2>
+                        <p class="book-text">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать с близкими</p>
+                        <div class="book-buttons-wrap">
+                         <a href="#" class="book-link">Подробнее</a>
+                         <p class="books-pages">170 страниц</p>
+                         </div>
+                        </li>
+                    </ul>             
+            </div>
+        </section>
+
+                <!-- Секция Лучшее-->
+                <section class="best-books">
+                    <div class="container">
+                            <h2 class="best-books-title">Лучшее</h2>
+                        <ul class="books-list">
+                             <!--первая книга-->
+                            <li class="book">
+                                <p class="book-rating">
+                                    <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                                <span class="book-rating-value">5</span>
+                                 </p>
+                                <!--рейтинг-->
+                                <!--картинка-->
+                                <img src="img/best/Backman.jpg" width="275" height="320" alt="Тревожные люди" class="book-img">
+                                <p class="book-author">Бакман Ф.</p>
+                                <h2 class="book-title">Тревожные люди</h2>
+                                <p class="book-text">Целая галерея уязвимых персонажей, тонко подмеченная Бакманом человеческая природа</p>
+                                <div class="book-buttons-wrap">
+                                 <a href="#" class="book-link">Подробнее</a>
+                                 <p class="books-pages">416 страниц</p>
+                                </div>
+                                </li>
+                             <!--вторая книга-->
+                            <li class="book">
+                                <p class="book-rating">
+                                    <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                                <span class="book-rating-value">4.9</span>
+                                 </p>
+                                <img src="img/best/Harari.jpg" width="275" height="320" alt="Sapiens" class="book-img">
+                                <p class="book-author">Харари Ю.</p>
+                                <h2 class="book-title">Sapiens</h2>
+                                <p class="book-text">Краткая история человечества. Какое будущее нас ожидает? Кто наши предки?</p>
+                                <div class="book-buttons-wrap">
+                                 <a href="#" class="book-link">Подробнее</a>
+                                 <p class="books-pages">520 страниц</p>
+                                </div>
+                                </li>
+                             <!--третья книга-->
+                            <li class="book">
+                                <p class="book-rating">
+                                    <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                                <span class="book-rating-value">4.8</span>
+                                 </p>
+                                <img src="img/best/S.King.jpg"  width="275" height="320" alt="Институт" class="book-img">
+                                <p class="book-author">Кинг С.</p>
+                                <h2 class="book-title">Институт</h2>
+                                <p class="book-text">Бежать невозможно. Будущее предопределено. Загадочная Дальняя половина Института</p>
+                                <div class="book-buttons-wrap">
+                                 <a href="#" class="book-link">Подробнее</a>
+                                 <p class="books-pages">608 страниц</p>
+                                </div>
+                                </li>
+                             <!--четвертая книга-->
+                            <li class="book">
+                                <p class="book-rating">
+                                    <img src="img/new/Star 1.svg" class="book-rating-img"alt="Иконка звездочки">
+                                <span class="book-rating-value">4.7</span>
+                                 </p>
+                                <img src="img/best/Runi.jpg" width="275" height="320" alt="Нормальные люди" class="book-img">
+                                <p class="book-author">Руни С.</p>
+                                <h2 class="book-title">Нормальные люди</h2>
+                                <p class="book-text">О желании ощутить власть над другим человеком и одновременно всецело принадлежать ему</p>
+                                <div class="book-buttons-wrap">
+                                 <a href="#" class="book-link">Подробнее</a>
+                                 <p class="books-pages">288 страниц</p>
+                                </div>
+                                </li>
+                            </div>
+                            </div>
+                </section>
+                       <!-- Секция отзывы-->
+                           <section class="reviews">
+                                   <div class="container">
+                                     <h2 class="reviews-title">Отзывы</h2>
+                             <ul class="reviews-list">
+                              <li class="reviews-item">
+                                  <div class="reviews-content-wrap">
+                            <img src="img/otsyv/Agapiew.jpg" alt="Агапьев" class="review-img">
+                            <h3 class="review-author">Кирилл Агапьев</h3>
+                                 </div>
+                            <p class="review-amount">Купил 35 книг</p>
+                            <p class="review-text">Огромный ассортимент разных книг, которых нет в магазинах нашего города.<br>Цены зачастую гораздо ниже магазинских, так плюс к этому ещё и постоянные большие скидки!</p>
+                        </li>
+                              <li class="reviews-item">
+                                <div class="reviews-content-wrap">
+                            <img src="img/otsyv/Mariina.jpg" alt="Марьина" class="review-img">
+                            <h3 class="review-author">Елизавета Марьина</h3>
+                                </div>
+                            <p class="review-amount">Купила 76 книг</p>
+                            <p class="review-text">Удобная навигация, большой выбор, книги в подарок при определенной сумме заказа. Заказ собирают без ошибок, привозят без задержек</p>
+                        </li>
+                              <li class="review-item">
+                                <div class="reviews-content-wrap">
+                            <img src="img/otsyv/Alenicheva.jpg" alt="Аленичева" class="review-img">
+                            <h3 class="review-author">Полина Аленичева</h3>
+                                </div>
+                            <p class="review-amount">Купила 17 книг</p>
+                            <p class="review-text">Удобный каталог, полезные отзывы на книги, так же есть видеообзоры на книги. Иногда можно приобрести дорогое издание за «символическую» цену.</p>
+                        </li>
+                        </ul>
+                                   </div>
+                           </section>
+
+                     <!-- Секция О нас-->
+        <section class="about-us">
+            <div class="container">
+                    <h2 class="about-us-title">О нас</h2> 
+                    <ul class="about-us">
+                        <li class="about-us-item">
+                            <h3 class="about-us-slogan">По полочкам — крупнейший книжный интернет магазин</h3>
+                            <p class="about-us-text">Мы предлагаем большой выбор книг, поддерживая длительные 
+                                и дружелюбные партнёрские отношения с большинством издательств. Мы любим книги, ценим любовь к книгам наших покупателей, поэтому стараемся сделать всё возможное, чтобы каждая книга нашла своего читателя. Наши продавцы разделяют вашу любовь к чтению 
+                                и всегда рады помочь.</p>
+                        </li>
+                        <li class="about-us-item">
+                            <h3 class="about-us-slogan">Почему покупать книги онлайн удобно?</h3>
+                            <p class="about-us-text">Что делать, если вам нужна особенная книга? Вдруг ее нет в наличии? Чтобы сэкномить время, загляните на наш сайт. Мы доставляем книги почтой, курьером, в пункты самовывоза или бесплатно в магазины сети. А еще у нас есть мобильное приложение, в котором удобно делать заказы. Вы можете добавить в него Карту Любимого Покупателя, чтобы копить бонусы и тратить их на покупки.</p>
+                        </li>
+                        </ul>
+                        </div>
+        </section>             
+     </main>                                
+     <footer class="footer">
+       <div class="footer-wrap">
+        <div class="container">
+                      <div class="footer-social">
+                         <ul class="social-button-list">
+                            <li>
+                    <a class="logo-link" href="#"><span class="visually-hidden"></span>
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                   </li>
+                            <li>
+                    <a class="icon-link" href="#"><span class="visually-hidden">insta</span>
+                        <img src="img/footer icons/insta.svg" alt="insta">
+                    </a>
+                   </li>
+                          <li>
+                    <a class="icon-link" href="#"><span class="visually-hidden">telegram</span>
+                        <img src="img/footer icons/telegram.svg" alt="telegram">
+                    </a>
+                   </li>
+                          <li>
+                    <a class="icon-link" href="#"><span class="visually-hidden">vk</span>
+                        <img src="img/footer icons/vk.svg" alt="vk">
+                    </a>
+                   </li>
+                         <li>
+                    <a class="icon-link" href="#"><span class="visually-hidden">youtube</span>
+                        <img src="img/footer icons/youtube.svg" alt="youtube">
+                    </a>
+                   </li>    
+                </ul>
+            </div>
+
+                    <div class="nav-wrap">
+                        <h3 class="nav-title"><span class="visually-hidden">Меню</span></h3>
+                        <ul class="nav-list"> 
+                         <li>
+                    <a class="nav-link" href="#"><span class="visually-hidden">Главная</span></a>
+                   </li>
+                          <li>
+                    <a class="nav-link" href="#"><span class="visually-hidden">Каталог книг</span></a>
+                   </li>
+                          <li>
+                    <a class="nav-link" href="#"><span class="visually-hidden">Оплата и доставка</span></a>
+                   </li>
+                         <li>
+                    <a class="nav-link" href="#"><span class="visually-hidden">Контакты</span></a>
+                   </li>
+                   </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h3 class="footer-title"><span class="visually-hidden">Интересно</span></h3>
+                        <ul class="footer-list">
+                                 <li>
+                    <a class="footer-link" href="#"><span class="visually-hidden">Новости</span></a>
+                             </li>
+                                 <li>
+                    <a class="footer-link" href="#"><span class="visually-hidden">Акция</span></a>
+                            </li>
+                                  <li>
+                    <a class="footer-link" href="#"><span class="visually-hidden">Блог</span></a>
+                             </li>
+                                     <li>
+                    <a class="footer-link" href="#"><span class="visually-hidden">Скидка</span></a>
+                            </li>
+                </div>
+            </ul>
+                  <div class="footer-block">
+                    <h3 class="footer-title"><span class="visually-hidden">Важно</span></h3>
+                <ul class="footer-list">
+                  <li>
+            <a class="footer-link" href="#"><span class="visually-hidden">Возврат</span></a>
+                 </li>
+                    <li>
+            <a class="footer-link" href="#"><span class="visually-hidden">Сертификаты</span></a>
+                     </li>
+                     <li>
+            <a class="footer-link" href="#"><span class="visually-hidden">Предзаказы</span></a>
+                      </li>
+                  <li>
+            <a class="footer-link" href="#"><span class="visually-hidden">Конкурсы</span></a>
+                   </li>
+                </ul>
+                  </div>
+                  <div class="footer-block">
+                    <h3 class="footer-title"><span class="visually-hidden">Адрес</span></h3>
+                    <ul class="footer-list">       
+                         <li>
+                <a class="footer-link" href="#"><span class="visually-hidden">г. Санкт-Петербург, 
+                    наб. Pеки Карповки, 5 корпус П</span></a>
+                      </li>
+                      <li>
+            <a class="footer-link" href="#"><span class="visually-hidden"> +7 800 555 86 28</span></a>
+                    </li>
+        </ul>
+            </div>
+                </div>   
+                    </div>
+                         </div>
+            <div class="footer-copyright">
+                <div class="container">
+               <p>© ООО «Интерактивные обучающие технологии», 2013−2021</p>
+            </div>
+            </div>
+           </div>
+        </div>
+    </footer>                           
+</body>
+
+</html
