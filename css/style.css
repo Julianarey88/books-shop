@@ -4,15 +4,15 @@ html {
 *,*::before, *::after{
     box-sizing: inherit;
 }
-a{
+a {
     text-decoration: none;
-
 }
 input,
 button,
 textarea,
 select {
     font: inherit;
+  
 }
 h1,
 h2,
@@ -31,7 +31,7 @@ dl,
 dd {
     text-decoration: none;
     margin: 0;
-    
+    list-style: none;
 }
 body {
     font-family: 'PT Astra Sans', sans-serif;
@@ -152,4 +152,271 @@ body {
     .user-menu-link--enter:hover {
         color: #fff;
         background-color: #3971FF;
+    }
+ .promo {
+     margin: 110px 50px;
+    width: 1220px;
+    height: 500px;
+    background-color: #FF7D02;
+ }
+.promo-slider-wrap {
+    display: flex;
+}
+.new-books {
+    margin-left: 110px;  
+}
+
+.new-books-title {
+    margin-bottom: 40px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 53px;
+    color: #37393E;
+}
+.books-list {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+.book {
+    max-width: 270px;
+}
+.book-rating {
+position: absolute;
+}
+.book-rating-img {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.book-rating-value {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.book-img {
+margin-bottom: 18px;
+}
+.book-author {
+    margin-left: 14px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
+.book-title {
+    margin-bottom: 5px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3971FF;
+}
+.book-text {
+    margin-bottom: 20px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #37393E;
+}
+.book-buttons-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px 3px;
+    background: #3971FF;
+    border-radius: 2px;
+}
+.book-link {
+
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;   
+}
+.books-pages {
+    margin-left: 10px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
+.best-books {
+    margin-left: 110px;  
+}
+
+.best-books-title {
+    margin-bottom: 40px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 53px;
+    color: #37393E;
+}
+.books-list {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+.book {
+    max-width: 270px;
+}
+.book-rating {
+    position: absolute;
+}
+.book-rating-img {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.book-rating-value {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.book-img {
+    margin-bottom: 18px;
+}
+.book-author {
+    margin-left: 14px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
+.book-title {
+    margin-bottom: 5px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3971FF;
+}
+.book-text {
+    margin-bottom: 20px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #37393E;
+}
+.book-buttons-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px 3px;
+    background: #3971FF;
+    border-radius: 2px;
+}
+.book-link {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;   
+}
+.books-pages {
+    margin-left: 10px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
+.reviews {
+    margin-left: 110px;
+}
+
+.reviews-title {
+    margin-bottom: 40px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 53px;
+    color: #000000;
+}
+.reviews-list {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+}
+.reviews-item {
+    
+}
+.reviews-content-wrap {
+   
+}
+.review-img {
+    margin-bottom: 10px;
+    position: static;
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+}
+.review-author {
+    margin-left: 10px;
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3971FF;
+}
+.review-amount {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #BFBFBF;
+
+}
+.review-text {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #37393E;
     }
