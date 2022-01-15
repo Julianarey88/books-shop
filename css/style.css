@@ -490,9 +490,7 @@ position: relative;
     margin-left: 110px;
     color: #fff;
     }
-    .visually-hidden {
-    
-    }
+
     .nav-wrap {
         display: flex;
         flex-wrap: column;
@@ -507,11 +505,6 @@ position: relative;
     color: #4A4C51;
 
     }
-    .nav-list {
-
-    }
-    .nav-link {
-    }
     .footer-block {
         display: flex;
     }
@@ -522,11 +515,8 @@ position: relative;
     font-size: 16px;
     line-height: 18px;
     color: #FFFFFF;
-
     }
-    .footer-list {
-
-    }
+  
     .footer-link {
     font-family: PT Astra Sans;
     font-style: normal;
