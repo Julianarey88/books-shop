@@ -133,6 +133,7 @@ body {
 }
 
     .user-menu-link {
+    
         border: 1px solid #fff;
         border-radius: 2px;
         padding: 1px 10px 3px;
@@ -364,6 +365,7 @@ margin-bottom: 18px;
 }
 
 .reviews-title {
+   
     margin-bottom: 40px;
     font-family: Podkova;
     font-style: normal;
@@ -375,17 +377,19 @@ margin-bottom: 18px;
 .reviews-list {
     margin-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
     justify-content: space-between;
-    row-gap: 60px;
+    column-gap: 60px;
 }
 .reviews-item {
-    
+position: relative;
 }
 .reviews-content-wrap {
-   
+   display: flex;
+  
 }
 .review-img {
+
     margin-bottom: 10px;
     position: static;
     width: 80px;
@@ -404,6 +408,7 @@ margin-bottom: 18px;
     color: #3971FF;
 }
 .review-amount {
+  margin-bottom: 26px;
     font-family: PT Astra Sans;
     font-style: normal;
     font-weight: normal;
@@ -420,3 +425,127 @@ margin-bottom: 18px;
     line-height: 21px;
     color: #37393E;
     }
+    .about-us {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: column;
+        column-gap: 120px;
+    }
+ 
+    .about-us-title {
+        margin-left: 110px;
+        margin-bottom: 40px;
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 53px;
+        color: #000000;
+        
+    }
+    .about-us-item {
+        position: relative;
+        margin-left: 20px;
+    }
+    .about-us-slogan {
+        margin-right: 20px;
+        margin-bottom: 12px;
+        font-family: PT Astra Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #3971FF;
+        
+    }
+    .about-us-text {
+        font-family: PT Astra Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #37393E;
+    }
+
+    .footer {
+        box-sizing: border-box;
+        background: #37393E;
+    }
+    .footer-wrap {
+       position: relative;
+    }
+    
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        row-gap: 15px;
+        color: #fff;
+
+    }
+    .social-button-list {
+        display: inline;
+    }
+    .logo-link {
+    margin-left: 110px;
+    color: #fff;
+    }
+    .visually-hidden {
+    
+    }
+    .nav-wrap {
+        display: flex;
+        flex-wrap: column;
+    }
+
+    .nav-title {
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: #4A4C51;
+
+    }
+    .nav-list {
+
+    }
+    .nav-link {
+    }
+    .footer-block {
+        display: flex;
+    }
+    .footer-title {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    }
+    .footer-list {
+
+    }
+    .footer-link {
+    font-family: PT Astra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    }
+
+    .footer-copyright {
+    margin-bottom: 13px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4C51;
+
+    }
+   
