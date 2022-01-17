@@ -1,19 +1,27 @@
+/* подключаем файл .css с шрифтами, всё его содержимое как бы вставится сюда начиная со строчки @import... */
+@import url('fonts.css');
+
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*,*::before, *::after{
-    box-sizing: inherit;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 input,
 button,
 textarea,
 select {
-    font: inherit;
-  
+  font: inherit;
 }
+
 h1,
 h2,
 h3,
@@ -29,513 +37,588 @@ figcaption,
 blockquote,
 dl,
 dd {
-    text-decoration: none;
-    margin: 0;
-    list-style: none;
+  text-decoration: none;
+  margin: 0;
+  /* padding не хватало, вообще рекомендую тебе скопировать .container и выше всё и вставлять в новые проекты, слегка изменяя ширину контейнера и стили в body от проекта к проекту */
+  padding: 0;
+  list-style: none;
 }
+
 body {
-    font-family: 'PT Astra Sans', sans-serif;
-    font-weight: 400;
-    line-height: 21px;
-    color: #37393E;
-    font-size: 16px;
-} 
-   
-.header-top {
-    padding: 23px 0 22px;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-family: 'PT Astra Sans', sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  color: #37393E;
+  font-size: 16px;
 }
 
 .container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 15px;
-    
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+
 }
+
+.header-top {
+  padding: 23px 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__inner-box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-    .logo {
-    margin-right: 37px;
+
+.logo {
+  margin-right: 37px;
 
 }
+
 .address {
-    font-style: normal;
-}
-.cart {
-    display: flex;
-}
-.cart-btn {
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 34px;
-    height: 34px;
-    background-color:#3971FF ;
-}
-.search-box {
-    display: flex;
-}
-.search-form {
-    position: relative;
-    }
-.search-input {
-    border: 1px solid #37393E;
-    border-radius: 2px;
-    padding: 7px 30px 7px 12px;
-    width: 367px;
-    line-height: 18px;
-}
-.search-input ::placeholder {
-    color: #BFBFBF;
-}
-.search-btn {
-   position: absolute;
-   top: 5px;
-   right: 5px;
-   background: none;
-   padding: 0;
-   border-radius: 2px;
-    }
-    .header-bottom {
-        margin-bottom: 50px;
-        background-color: #3971FF;
-    }
-    .header-bottom-inner {
-        padding: 8px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-.nav-list {
-    display: flex;
-   }
-   .nav-item+.nav-item {
-       margin-left: 20px;
-   }
-.nav-item {
-    padding-top: 12px;
-    padding-bottom: 11px;
-    margin-left: 20px;
-    font-family: PT Astra Sans;
-    color: #FFFFFF;
-}
-.nav-link {
-    line-height: 18px;
-    color: #fff;
-}
-.user-menu-item+.user-menu-item {
-   margin-left: 10px;
+  font-style: normal;
 }
 
-    .user-menu-link {
-    
-        border: 1px solid #fff;
-        border-radius: 2px;
-        padding: 1px 10px 3px;
-        color: #fff;
-        background-color:#3971FF;
-        transition: all .3s;
+.cart {
+  display: flex;
 }
+
+.cart-btn {
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-color: #3971FF;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-input {
+  margin-right: 10px;
+  border: 1px solid #37393E;
+  border-radius: 2px;
+  padding: 7px 33px 7px 12px;
+  width: 367px;
+  line-height: 18px;
+}
+
+.search-input::placeholder {
+  color: #BFBFBF;
+}
+
+.search-btn {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header-bottom {
+  margin-bottom: 50px;
+  background-color: #3971FF;
+}
+
+.header-bottom-inner {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item {
+  /* padding-top: 12px;
+  padding-bottom: 11px; */
+  /* margin-left: 20px; */
+  /* font-family: PT Astra Sans; */
+  /* color: #FFF; */
+}
+
+.nav-link {
+  line-height: 18px;
+  color: #fff;
+}
+
+/* нехватало */
+.user-menu-items {
+  display: flex;
+}
+
+.user-menu-item+.user-menu-item {
+  margin-left: 10px;
+}
+
+.user-menu-link {
+
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 1px 10px 3px;
+  color: #fff;
+  background-color: #3971FF;
+  transition: all .3s;
+}
+
 .user-menu-link:hover {
-    color: #3971FF;
-    background-color:#fff ;
+  color: #3971FF;
+  background-color: #fff;
 }
-    .user-menu-link--enter {
-       background-color: #fff;
-       color: #3971FF;
-       transition: all .3s;
-    }
-    .user-menu-link--enter:hover {
-        color: #fff;
-        background-color: #3971FF;
-    }
- .promo {
-     margin: 110px 50px;
-    width: 1220px;
-    height: 500px;
-    background-color: #FF7D02;
- }
+
+.user-menu-link--enter {
+  background-color: #fff;
+  color: #3971FF;
+  transition: all .3s;
+}
+
+.user-menu-link--enter:hover {
+  color: #fff;
+  background-color: #3971FF;
+}
+
+.promo {
+  margin: 110px 50px;
+  width: 1220px;
+  height: 500px;
+  background-color: #FF7D02;
+}
+
 .promo-slider-wrap {
-    display: flex;
+  display: flex;
 }
+
 .new-books {
-    margin-left: 110px;  
+  margin-left: 110px;
 }
 
 .new-books-title {
-    margin-bottom: 40px;
-    font-family: Podkova;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 53px;
-    color: #37393E;
+  margin-bottom: 40px;
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 53px;
+  color: #37393E;
 }
+
 .books-list {
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
 }
+
 .book {
-    max-width: 270px;
+  max-width: 270px;
 }
+
 .book-rating {
-position: absolute;
+  position: absolute;
 }
+
 .book-rating-img {
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
+
 .book-rating-value {
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
+
 .book-img {
-margin-bottom: 18px;
+  margin-bottom: 18px;
 }
+
 .book-author {
-    margin-left: 14px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #BFBFBF;
+  margin-left: 14px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BFBFBF;
 }
+
 .book-title {
-    margin-bottom: 5px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #3971FF;
+  margin-bottom: 5px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3971FF;
 }
+
 .book-text {
-    margin-bottom: 20px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #37393E;
+  margin-bottom: 20px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #37393E;
 }
+
 .book-buttons-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1px 10px 3px;
-    background: #3971FF;
-    border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 10px 3px;
+  background: #3971FF;
+  border-radius: 2px;
 }
+
 .book-link {
 
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;   
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
+
 .books-pages {
-    margin-left: 10px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #BFBFBF;
+  margin-left: 10px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BFBFBF;
 }
+
 .best-books {
-    margin-left: 110px;  
+  margin-left: 110px;
 }
 
 .best-books-title {
-    margin-bottom: 40px;
-    font-family: Podkova;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 53px;
-    color: #37393E;
+  margin-bottom: 40px;
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 53px;
+  color: #37393E;
 }
+
 .books-list {
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
 }
+
 .book {
-    max-width: 270px;
+  max-width: 270px;
 }
+
 .book-rating {
-    position: absolute;
+  position: absolute;
 }
+
 .book-rating-img {
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
+
 .book-rating-value {
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
+
 .book-img {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
+
 .book-author {
-    margin-left: 14px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #BFBFBF;
+  margin-left: 14px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BFBFBF;
 }
+
 .book-title {
-    margin-bottom: 5px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #3971FF;
+  margin-bottom: 5px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3971FF;
 }
+
 .book-text {
-    margin-bottom: 20px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #37393E;
+  margin-bottom: 20px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #37393E;
 }
+
 .book-buttons-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1px 10px 3px;
-    background: #3971FF;
-    border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 10px 3px;
+  background: #3971FF;
+  border-radius: 2px;
 }
+
 .book-link {
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;   
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
+
 .books-pages {
-    margin-left: 10px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #BFBFBF;
+  margin-left: 10px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BFBFBF;
 }
+
 .reviews {
-    margin-left: 110px;
+  margin-left: 110px;
 }
 
 .reviews-title {
-   
-    margin-bottom: 40px;
-    font-family: Podkova;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 53px;
-    color: #000000;
+
+  margin-bottom: 40px;
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 53px;
+  color: #000000;
 }
+
 .reviews-list {
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: column;
-    justify-content: space-between;
-    column-gap: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: column;
+  justify-content: space-between;
+  column-gap: 60px;
 }
+
 .reviews-item {
-position: relative;
+  position: relative;
 }
+
 .reviews-content-wrap {
-   display: flex;
-  
+  display: flex;
+
 }
+
 .review-img {
 
-    margin-bottom: 10px;
-    position: static;
-    width: 80px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
+  margin-bottom: 10px;
+  position: static;
+  width: 80px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
 
 }
+
 .review-author {
-    margin-left: 10px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #3971FF;
+  margin-left: 10px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3971FF;
 }
+
 .review-amount {
   margin-bottom: 26px;
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #BFBFBF;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #BFBFBF;
 
 }
+
 .review-text {
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #37393E;
-    }
-    .about-us {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: column;
-        column-gap: 120px;
-    }
- 
-    .about-us-title {
-        margin-left: 110px;
-        margin-bottom: 40px;
-        font-family: Podkova;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 53px;
-        color: #000000;
-        
-    }
-    .about-us-item {
-        position: relative;
-        margin-left: 20px;
-    }
-    .about-us-slogan {
-        margin-right: 20px;
-        margin-bottom: 12px;
-        font-family: PT Astra Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        color: #3971FF;
-        
-    }
-    .about-us-text {
-        font-family: PT Astra Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
-        color: #37393E;
-    }
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #37393E;
+}
 
-    .footer {
-        box-sizing: border-box;
-        background: #37393E;
-    }
-    .footer-wrap {
-       position: relative;
-    }
-    
-    .footer-social {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        row-gap: 15px;
-        color: #fff;
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: column;
+  column-gap: 120px;
+}
 
-    }
-    .social-button-list {
-        display: inline;
-    }
-    .logo-link {
-    margin-left: 110px;
-    color: #fff;
-    }
+.about-us-title {
+  margin-left: 110px;
+  margin-bottom: 40px;
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 53px;
+  color: #000000;
 
-    .nav-wrap {
-        display: flex;
-        flex-wrap: column;
-    }
+}
 
-    .nav-title {
-    font-family: Podkova;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 27px;
-    color: #4A4C51;
+.about-us-item {
+  position: relative;
+  margin-left: 20px;
+}
 
-    }
-    .footer-block {
-        display: flex;
-    }
-    .footer-title {
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
-    }
-  
-    .footer-link {
-    font-family: PT Astra Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
-    }
+.about-us-slogan {
+  margin-right: 20px;
+  margin-bottom: 12px;
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3971FF;
 
-    .footer-copyright {
-    margin-bottom: 13px;
-    font-family: Golos;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    align-items: flex-end;
-    color: #4A4C51;
+}
 
-    }
-   
+.about-us-text {
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #37393E;
+}
+
+.footer {
+  box-sizing: border-box;
+  background: #37393E;
+}
+
+.footer-wrap {
+  position: relative;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 15px;
+  color: #fff;
+
+}
+
+.social-button-list {
+  display: inline;
+}
+
+.logo-link {
+  margin-left: 110px;
+  color: #fff;
+}
+
+.nav-wrap {
+  display: flex;
+  flex-wrap: column;
+}
+
+.nav-title {
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+  color: #4A4C51;
+
+}
+
+.footer-block {
+  display: flex;
+}
+
+.footer-title {
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer-link {
+  font-family: PT Astra Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer-copyright {
+  margin-bottom: 13px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  color: #4A4C51;
+
+}
