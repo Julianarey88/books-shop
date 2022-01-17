@@ -146,14 +146,6 @@ body {
   margin-left: 20px;
 }
 
-.nav-item {
-  /* padding-top: 12px;
-  padding-bottom: 11px; */
-  /* margin-left: 20px; */
-  /* font-family: PT Astra Sans; */
-  /* color: #FFF; */
-}
-
 .nav-link {
   line-height: 18px;
   color: #fff;
@@ -561,14 +553,13 @@ body {
   align-items: center;
   row-gap: 15px;
   color: #fff;
-
 }
 
 .social-button-list {
   margin-top: 58px;
   display: block;
+  color: #FFFFFF;
 }
-
 
 .nav-wrap {
  position: relative;
@@ -584,7 +575,7 @@ body {
 }
 
 .nav-list {
-display: block;
+display: inline-block;
 }
 .nav-link {
   margin-bottom: 6px;
