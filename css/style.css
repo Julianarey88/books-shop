@@ -598,7 +598,7 @@ display: inline-block;
   color: #4A4C51;
 }
 .footer-list {
-  display: block;
+  display: inline-block;
 }
 .footer-link {
   margin-bottom: 6px;
