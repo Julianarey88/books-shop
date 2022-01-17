@@ -433,7 +433,6 @@ body {
 }
 
 .reviews-title {
-
   margin-bottom: 40px;
   font-family: Podkova;
   font-style: normal;
@@ -538,6 +537,7 @@ body {
 }
 
 .about-us-text {
+  margin-bottom: 89px;
   font-family: PT Astra Sans;
   font-style: normal;
   font-weight: normal;
@@ -565,43 +565,56 @@ body {
 }
 
 .social-button-list {
-  display: inline;
+  margin-top: 58px;
+  display: block;
 }
 
-.logo-link {
-  margin-left: 110px;
-  color: #fff;
-}
 
 .nav-wrap {
-  display: flex;
-  flex-wrap: column;
+ position: relative;
 }
-
 .nav-title {
+  margin-bottom: 8px;
   font-family: Podkova;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 27px;
   color: #4A4C51;
-
 }
 
-.footer-block {
-  display: flex;
+.nav-list {
+display: block;
 }
-
-.footer-title {
+.nav-link {
+  margin-bottom: 6px;
   font-family: PT Astra Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
+  
+}
+.footer-block {
+  display: block;
+
 }
 
+.footer-title {
+  margin-bottom: 8px;
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+  color: #4A4C51;
+}
+.footer-list {
+  display: block;
+}
 .footer-link {
+  margin-bottom: 6px;
   font-family: PT Astra Sans;
   font-style: normal;
   font-weight: normal;
