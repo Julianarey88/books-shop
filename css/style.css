@@ -138,7 +138,7 @@ body {
   align-items: center;
 }
 
-.nav-list {
+.header-nav-list {
   display: flex;
 }
 
@@ -549,15 +549,14 @@ body {
 
 .footer-social {
   display: flex;
-  flex-direction: row;
   align-items: center;
   row-gap: 15px;
   color: #fff;
 }
 
 .social-button-list {
+  
   margin-top: 58px;
-  display: block;
   color: #FFFFFF;
 }
 
