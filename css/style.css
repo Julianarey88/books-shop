@@ -22,6 +22,10 @@ select {
   font: inherit;
 }
 
+address {
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -203,7 +207,7 @@ body {
 
 .new-books-title {
   margin-bottom: 40px;
-  font-family: Podkova;
+  font-family: 'Podkova', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -315,7 +319,7 @@ body {
 
 .best-books-title {
   margin-bottom: 40px;
-  font-family: Podkova;
+  font-family: 'Podkova', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -426,7 +430,7 @@ body {
 
 .reviews-title {
   margin-bottom: 40px;
-  font-family: Podkova;
+  font-family: 'Podkova', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -500,15 +504,14 @@ body {
 }
 
 .about-us-title {
-  margin-left: 110px;
+  /* margin-left: 110px; */
   margin-bottom: 40px;
-  font-family: Podkova;
-  font-style: normal;
+  font-family: 'Podkova';
+  /* font-style: normal; */
   font-weight: 500;
   font-size: 48px;
   line-height: 53px;
   color: #000000;
-
 }
 
 .about-us-item {
@@ -539,42 +542,50 @@ body {
 }
 
 .footer {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background: #37393E;
 }
 
-.footer-wrap {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 48px 0 47px;
 }
-.footer__inner-left-box {
-  display: flex; 
-}
+
+/* .footer__inner-left-box {
+  display: flex;
+} */
+
 .footer-social {
-  margin-bottom: 23px;
+  /* margin-bottom: 23px;
   row-gap: 15px;
-  color: #fff;
+  color: #fff; */
+}
+
+.footer-logo-link {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.social-button-item+.social-button-item {
+  margin-left: 10px;
 }
 
 .social-button-list {
-  margin-top: 58px;
-  color: #FFFFFF;
-}
-
-.nav-wrap {
- display: flex;
- justify-content: space-between;
+  margin-left: 2px;
+  display: flex;
+  /* margin-top: 58px;
+  color: #FFFFFF; */
 }
 
 .footer__inner-right-box {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-title {
   margin-bottom: 8px;
-  font-family: Podkova;
+  font-family: 'Podkova', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -582,9 +593,10 @@ justify-content: space-between;
   color: #4A4C51;
 }
 
-.nav-list {
-margin-top: 48px;
-}
+/* .nav-list {
+  margin-top: 48px;
+} */
+
 .nav-link {
   margin-bottom: 6px;
   font-family: PT Astra Sans;
@@ -593,43 +605,58 @@ margin-top: 48px;
   font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
-  
+
+}
+
+.footer__inner-right-box {
+  display: flex;
+}
+
+.footer-block {
+  margin-left: 64px;
 }
 
 .footer-title {
   margin-bottom: 8px;
-  font-family: Podkova;
+  font-family: 'Podkova', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 27px;
   color: #4A4C51;
 }
-.footer-list {
-  display: inline-block;
-}
+
+/* .footer-list {
+  display: inline-block; 
+
+} */
+
 .footer-list-item-address {
   width: 225px;
+  color: #fff;
 }
+
 .footer-link {
   margin-bottom: 6px;
-  font-family: PT Astra Sans;
-  font-style: normal;
+  /* font-family: PT Astra Sans; */
+  /* font-style: normal; */
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .footer-copyright {
-  margin-bottom: 13px;
-  font-family: Golos;
+  /* margin-bottom: 13px; */
+  /* font-family: 'Golos';
   font-style: normal;
-  font-weight: normal;
+  font-weight: normal; */
+  padding: 13px 0;
+  font-family: 'Podkova', serif;
   font-size: 12px;
   line-height: 14px;
   display: flex;
   align-items: flex-end;
   color: #4A4C51;
-
+  background-color: #222225;
 }
