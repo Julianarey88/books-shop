@@ -204,7 +204,7 @@ body {
   margin: 110px 50px;
   width: 1220px;
   height: 500px;
-  background-color: #FF7D02;
+  background-image: url(/img/slider/bg.jpg);
 }
 
 .promo-slider-wrap {
