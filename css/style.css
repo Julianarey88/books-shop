@@ -504,10 +504,9 @@ body {
 }
 
 .about-us-title {
-  /* margin-left: 110px; */
+
   margin-bottom: 40px;
   font-family: 'Podkova';
-  /* font-style: normal; */
   font-weight: 500;
   font-size: 48px;
   line-height: 53px;
@@ -520,6 +519,7 @@ body {
 }
 
 .about-us-slogan {
+
   margin-right: 20px;
   margin-bottom: 12px;
   font-family: PT Astra Sans;
@@ -542,7 +542,7 @@ body {
 }
 
 .footer {
-  /* box-sizing: border-box; */
+
   background: #37393E;
 }
 
@@ -550,16 +550,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 48px 0 47px;
-}
-
-/* .footer__inner-left-box {
-  display: flex;
-} */
-
-.footer-social {
-  /* margin-bottom: 23px;
-  row-gap: 15px;
-  color: #fff; */
 }
 
 .footer-logo-link {
@@ -574,8 +564,6 @@ body {
 .social-button-list {
   margin-left: 2px;
   display: flex;
-  /* margin-top: 58px;
-  color: #FFFFFF; */
 }
 
 .footer__inner-right-box {
@@ -592,10 +580,6 @@ body {
   line-height: 27px;
   color: #4A4C51;
 }
-
-/* .nav-list {
-  margin-top: 48px;
-} */
 
 .nav-link {
   margin-bottom: 6px;
@@ -626,11 +610,6 @@ body {
   color: #4A4C51;
 }
 
-/* .footer-list {
-  display: inline-block; 
-
-} */
-
 .footer-list-item-address {
   width: 225px;
   color: #fff;
@@ -638,8 +617,6 @@ body {
 
 .footer-link {
   margin-bottom: 6px;
-  /* font-family: PT Astra Sans; */
-  /* font-style: normal; */
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -647,10 +624,7 @@ body {
 }
 
 .footer-copyright {
-  /* margin-bottom: 13px; */
-  /* font-family: 'Golos';
-  font-style: normal;
-  font-weight: normal; */
+
   padding: 13px 0;
   font-family: 'Podkova', serif;
   font-size: 12px;
