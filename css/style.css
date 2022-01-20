@@ -507,11 +507,10 @@ body {
 
 .about-us-item {
   position: relative;
-  margin-left: 20px;
 }
 
 .about-us-slogan {
-  
+  margin-bottom: 12px;
   font-family: 'PT Astra Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -522,7 +521,7 @@ body {
 }
 
 .about-us-text {
-  margin-bottom: 89px;
+  margin-bottom: 110px;
   font-family: 'PT Astra Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
