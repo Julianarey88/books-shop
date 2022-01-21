@@ -2,8 +2,6 @@
 @import url('fonts.css');
 
 html {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -45,26 +43,26 @@ dl,
 dd {
   text-decoration: none;
   margin: 0;
-  /* padding не хватало, вообще рекомендую тебе скопировать .container и выше всё и вставлять в новые проекты, слегка изменяя ширину контейнера и стили в body от проекта к проекту */
   padding: 0;
   list-style: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'PT Astra Sans', sans-serif;
   font-weight: 400;
+  font-size: 16px;
   line-height: 21px;
   color: #37393E;
-  font-size: 16px;
 }
 
 .container {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
+}
 
+.visually-hidden {
+  visibility: hidden;
 }
 
 .header-top {
@@ -81,7 +79,6 @@ body {
 
 .logo {
   margin-right: 37px;
-
 }
 
 .address {
@@ -169,7 +166,6 @@ body {
 }
 
 .user-menu-link {
-
   border: 1px solid #fff;
   border-radius: 2px;
   padding: 1px 10px 3px;
@@ -193,14 +189,17 @@ body {
   color: #fff;
   background-color: #3971FF;
 }
+
+/* 
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-.promo {
+} */
+
+/* .promo {
   margin: 110px 50px;
   width: 1220px;
   height: 500px;
@@ -209,8 +208,128 @@ body {
 
 .promo-slider-wrap {
   display: flex;
+} */
+
+/* === PROMO-SLIDER === */
+
+.promo-slider {
+  margin-bottom: 70px;
 }
 
+.promo-slider__slide {
+  position: relative;
+  border-radius: 6px;
+  padding: 20px 35px 30px;
+  height: 427px;
+  color: #fff;
+  background-color: #FF7D02;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.promo-slider__info-box {
+  width: 495px;
+}
+
+.promo-slider__slide-title {
+  margin-bottom: 24px;
+  font-family: 'Podkova', serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 60px;
+}
+
+.promo-slider__slide-txt {
+  margin-bottom: 66px;
+}
+
+.promo-slider__slide-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  border-radius: 2px;
+  padding: 10px 24px 11px;
+  background-color: #3971FF;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.slick-arrow {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(57, 113, 255, 0.2);
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -15px;
+}
+
+.slick-next {
+  right: -15px;
+}
+
+.slick-prev img {
+  padding-right: 4px;
+  padding-top: 6px;
+}
+
+.slick-next img {
+  padding-left: 4px;
+  padding-top: 6px;
+}
+
+.slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 2px;
+  transition: all, .3s;
+}
+
+.slick-dots li.slick-active {
+  padding: 0 7px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 5px;
+  height: 14px;
+  border: 1px solid #fff;
+  background-color: #FF7D02;
+  border-radius: 50%;
+  transition: all, .5s;
+}
+
+.slick-dots .slick-active button {
+  outline: 1px solid #fff;
+  border: 1px solid #FF7D02;
+  background-color: #FFF;
+  transform: scale(1.5);
+}
+
+.slick-active li {
+  padding-right: 5px !important;
+}
+
+/* === / PROMO-SLIDER === */
 
 .new-books-title {
   margin-bottom: 40px;
@@ -239,12 +358,12 @@ body {
 }
 
 .book-rating-img {
-  background: #FFFFFF;
+  background: #FFF;
   border: 1px solid #FFFFFF;
 }
 
 .book-rating-value {
-  font-family:'PT Astra Sans', sans-serif;
+  font-family: 'PT Astra Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -281,7 +400,6 @@ body {
 }
 
 .book-text {
-
   min-height: 63px;
   margin-bottom: 20px;
   font-family: 'PT Astra Sans', sans-serif;
@@ -291,7 +409,6 @@ body {
 }
 
 .book-buttons-wrap {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -345,8 +462,8 @@ body {
 }
 
 .book-rating-img {
-  background: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  background: #fff;
+  border: 1px solid #FFF;
 }
 
 .book-rating-value {
@@ -354,11 +471,11 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #FFF;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0;
 }
 
 .book-img {
@@ -403,8 +520,6 @@ body {
 }
 
 .book-link {
-
-
   font-family: 'PT Astra Sans', sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -428,7 +543,7 @@ body {
   font-weight: 500;
   font-size: 48px;
   line-height: 53px;
-  color: #000000;
+  color: #000;
 }
 
 .reviews-list {
@@ -445,11 +560,9 @@ body {
 
 .reviews-content-wrap {
   display: flex;
-
 }
 
 .review-img {
-
   margin-bottom: 10px;
   position: static;
   width: 80px;
@@ -477,7 +590,6 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #BFBFBF;
-
 }
 
 .review-text {
@@ -531,7 +643,6 @@ body {
 }
 
 .footer {
-
   background: #37393E;
 }
 

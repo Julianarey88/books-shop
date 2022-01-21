@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -78,56 +80,63 @@
     </div>
   </header>
   <main>
-    <!--скрытый h1- заголовок страницы-->
     <h1 class="visually-hidden"> По полочкам - лучший интернет-магазин книг в г.Санкт-Петербург</h1>
-    <section class="promo">
+
+    <!-- === PROMO-SLIDER === -->
+    <section class="promo-slider">
       <div class="container">
-        <!--обертка слайдера-->
-        <div class="promo-slider-wrap">
-          <!--сильно упрощенная для понимания вёрстка кнопки-->
-          <button class="slider-button slider-button-prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <!--сам слайдер - список слайдов-->
-          <ul class="slider">
-            <!--первый слайд-->
-            <li class="slide slide-1">
-              <h2 class="slide-title">Бестселлер для самых умных и продвинутых</h2>
-              <p class="slide-text">Книга научит вас писать, читать, говорить по-новому.<br> Авторы на
-                конкретных примерах показывают, что такое хорошо и что такое плохо в информационных,
-                рекламных, журналистских и публицистических текстах.</p>
-              <a href="#" class="slide-link">Подробнее</a>
-            </li>
-            <!--второй слайд-->
-            <li class="slide slide-2">
-              <h2 class="slide-title">Заголовок слайда 2</h2>
-              <p class="slide-text">Описание слайда 2</p>
-              <a href="#" class="slide-link">Подробнее</a>
-            </li>
-          </ul>
-          <button class="slider-button slider-button-next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
-          <!--список кнопок-контроллов-->
-          <ul class="controls">
-            <li class="control">
-              <button class="control-button" type="button">
-                <span class="visually-hidden">1 слайд</span>
-              </button>
-            </li>
-            <li class="control">
-              <button class="control-button" type="button">
-                <span class="visually-hidden">2 слайд</span>
-              </button>
-            </li>
-            <li class="control">
-              <button class="control-button" type="button">
-                <span class="visually-hidden">3 слайд</span>
-              </button>
-            </li>
-          </ul>
+        <div class="promo-slider__wrapper">
+
+          <div class="promo-slider__slide"
+            style="background-image: url('img/content/promo-slider/book-pishi-sokrashai.png');">
+            <div class="promo-slider__info-box">
+              <h3 class="promo-slider__slide-title">
+                Бестселлер для самых умных и продвинутых
+              </h3>
+              <p class="promo-slider__slide-txt">
+                Книга научит вас писать, читать, говорить по-новому. Авторы на конкретных примерах показывают, что
+                такое
+                хорошо и что такое плохо в информационных, рекламных, журналистских и публицистических текстах.
+              </p>
+              <a class="promo-slider__slide-btn" href="#">
+                Подробнее
+              </a>
+            </div>
+          </div>
+
+          <div class="promo-slider__slide"
+            style="background-image: url('img/content/promo-slider/book-pishi-sokrashai.png');">
+            <div class="promo-slider__info-box">
+              <h3 class="promo-slider__slide-title">
+                Заголовок для 2-го слайда
+              </h3>
+              <p class="promo-slider__slide-txt">
+                Текст для 2-го слайда
+              </p>
+              <a class="promo-slider__slide-btn" href="#">
+                Подробнее
+              </a>
+            </div>
+          </div>
+
+          <div class="promo-slider__slide"
+            style="background-image: url('img/content/promo-slider/book-pishi-sokrashai.png');">
+            <div class="promo-slider__info-box">
+              <h3 class="promo-slider__slide-title">
+                Заголовок для 3-го слайда
+              </h3>
+              <p class="promo-slider__slide-txt">
+                Текст для 3-го слайда
+              </p>
+              <a class="promo-slider__slide-btn" href="#">
+                Подробнее
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- === / PROMO-SLIDER === -->
 
     <!-- Секция Новинки книг (каталог)-->
     <section class="new-books">
@@ -445,6 +454,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- === JAVASCRIPT === -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <!-- === / JAVASCRIPT === -->
+
 </body>
 
 </html
