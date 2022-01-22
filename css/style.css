@@ -190,26 +190,6 @@ body {
   background-color: #3971FF;
 }
 
-/* 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-} */
-
-/* .promo {
-  margin: 110px 50px;
-  width: 1220px;
-  height: 500px;
-  background-image: url(/img/slider/bg.jpg);
-}
-
-.promo-slider-wrap {
-  display: flex;
-} */
-
 /* === PROMO-SLIDER === */
 
 .promo-slider {
