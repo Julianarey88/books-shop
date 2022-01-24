@@ -1,4 +1,5 @@
 $(function () {
+  // === PROMO-SLIDER (slick JQ) ===
   $('.promo-slider__wrapper').slick({
     infinite: true,
     slidesToShow: 1,
@@ -13,4 +14,5 @@ $(function () {
     nextArrow:
       '<button type="button" class="slick-next"><img src="img/icons/anlge-right.svg" alt="стрелка вправо"></button>',
   });
+  // === / PROMO-SLIDER (slick JQ)  ===
 });
