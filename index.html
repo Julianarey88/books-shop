@@ -32,10 +32,9 @@
         </div>
         <div class="search-box">
           <form class="search-form" action="#">
-            <!-- пропущен был class -->
             <input class="search-input" type="text" placeholder="Поиск по полке">
             <button class="search-btn" type="submit">
-              <img class="search-btn-icon" src="img/icons/Search.svg" alt="иконка поиска">
+              <div class="search-btn-icon">
             </button>
           </form>
           <div class="cart">
@@ -53,10 +52,10 @@
           <nav class="nav">
             <ul class="header-nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="#">Главная</a>
+                <a class="nav-link" href="index.html">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Каталог книг</a>
+                <a class="nav-link" href="catalog.html">Каталог книг</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Оплата и доставка</a>
@@ -145,66 +144,82 @@
         <ul class="books-list">
           <!--первая книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">3.5</span>
-            </p>
+            </div>
             <!--рейтинг-->
             <!--картинка-->
-            <img src="img/new/live.jpg" width="275" height="320" alt="Жизнь в удовольствие" class="book-img">
-            <p class="book-author">Палиенко А.</p>
-            <h2 class="book-title">Жизнь в удовольствиe</h2>
-            <p class="book-text">Автор собрал в этой книге все свои знания, актуальные в современном мире
-            </p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">208 страниц</p>
+            <img class="book-img" src="img/new/live.jpg" width="275" height="320" alt="Жизнь в удовольствие">
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Палиенко А.</p>
+                <h2 class="book-title">Жизнь в удовольствиe</h2>
+                <p class="book-text">Автор собрал в этой книге все свои знания, актуальные в современном мире
+                </p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a class="book-link" href="#">Подробнее</a>
+                <p class="books-pages">208 страниц</p>
+              </div>
             </div>
           </li>
           <!--вторая книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.8</span>
-            </p>
+            </div>
             <img src="img/new/kingdom.jpg" width="275" height="320" alt="Королевство" class="book-img">
-            <p class="book-author">Несбё Ю.</p>
-            <h2 class="book-title">Королевство</h2>
-            <p class="book-text">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">576 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Несбё Ю.</p>
+                <h2 class="book-title">Королевство</h2>
+                <p class="book-text">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">576 страниц</p>
+              </div>
             </div>
           </li>
           <!--третья книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">3.9</span>
-            </p>
+            </div>
             <img src="img/new/transhumanism.jpg" width="275" height="320" alt="Transhumanism inc." class="book-img">
-            <p class="book-author">Пелевин В.</p>
-            <h2 class="book-title">Transhumanism inc.</h2>
-            <p class="book-text">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">608 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Пелевин В.</p>
+                <h2 class="book-title">Transhumanism inc.</h2>
+                <p class="book-text">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">608 страниц</p>
+              </div>
             </div>
           </li>
           <!--четвертая книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.1</span>
-            </p>
+            </div>
             <img src="img/new/shame.jpg" width="275" height="320" alt="Чувство стыда" class="book-img">
-            <p class="book-author">Санд И.</p>
-            <h2 class="book-title">Чувство стыда</h2>
-            <p class="book-text">Это чувство сидит глубоко в нас, о нем не принято распространяться и
-              обсуждать с близкими</p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">170 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Санд И.</p>
+                <h2 class="book-title">Чувство стыда</h2>
+                <p class="book-text">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать с
+                  близкими</p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">170 страниц</p>
+              </div>
             </div>
           </li>
         </ul>
@@ -218,68 +233,84 @@
         <ul class="books-list">
           <!--первая книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">5</span>
-            </p>
+            </div>
             <!--рейтинг-->
             <!--картинка-->
             <img src="img/best/Backman.jpg" width="275" height="320" alt="Тревожные люди" class="book-img">
-            <p class="book-author">Бакман Ф.</p>
-            <h2 class="book-title">Тревожные люди</h2>
-            <p class="book-text">Целая галерея уязвимых персонажей, тонко подмеченная Бакманом человеческая
-              природа</p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">416 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Бакман Ф.</p>
+                <h2 class="book-title">Тревожные люди</h2>
+                <p class="book-text">Целая галерея уязвимых персонажей, тонко подмеченная Бакманом человеческая
+                  природа</p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">416 страниц</p>
+              </div>
             </div>
           </li>
           <!--вторая книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.9</span>
-            </p>
+            </div>
             <img src="img/best/Harari.jpg" width="275" height="320" alt="Sapiens" class="book-img">
-            <p class="book-author">Харари Ю.</p>
-            <h2 class="book-title">Sapiens</h2>
-            <p class="book-text">Краткая история человечества. Какое будущее нас ожидает? Кто наши предки?
-            </p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">520 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Харари Ю.</p>
+                <h2 class="book-title">Sapiens</h2>
+                <p class="book-text">Краткая история человечества. Какое будущее нас ожидает? Кто наши предки?
+                </p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">520 страниц</p>
+              </div>
             </div>
           </li>
           <!--третья книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.8</span>
-            </p>
+            </div>
             <img src="img/best/S.King.jpg" width="275" height="320" alt="Институт" class="book-img">
-            <p class="book-author">Кинг С.</p>
-            <h2 class="book-title">Институт</h2>
-            <p class="book-text">Бежать невозможно. Будущее предопределено. Загадочная Дальняя половина
-              Института</p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">608 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Кинг С.</p>
+                <h2 class="book-title">Институт</h2>
+                <p class="book-text">Бежать невозможно. Будущее предопределено. Загадочная Дальняя половина
+                  Института</p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">608 страниц</p>
+              </div>
             </div>
           </li>
           <!--четвертая книга-->
           <li class="book">
-            <p class="book-rating">
-              <img src="img/new/Star 1.svg" class="book-rating-img" alt="Иконка звездочки">
+            <div class="book-rating">
+              <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.7</span>
-            </p>
+            </div>
             <img src="img/best/Runi.jpg" width="275" height="320" alt="Нормальные люди" class="book-img">
-            <p class="book-author">Руни С.</p>
-            <h2 class="book-title">Нормальные люди</h2>
-            <p class="book-text">О желании ощутить власть над другим человеком и одновременно всецело
-              принадлежать ему</p>
-            <div class="book-buttons-wrap">
-              <a href="#" class="book-link">Подробнее</a>
-              <p class="books-pages">288 страниц</p>
+            <div class="book-info">
+              <div class="book-info-box">
+                <p class="book-author">Руни С.</p>
+                <h2 class="book-title">Нормальные люди</h2>
+                <p class="book-text">О желании ощутить власть над другим человеком и одновременно всецело
+                  принадлежать ему</p>
+              </div>
+              <div class="book-buttons-wrap">
+                <a href="#" class="book-link">Подробнее</a>
+                <p class="books-pages">288 страниц</p>
+              </div>
             </div>
           </li>
       </div>
@@ -293,28 +324,34 @@
           <li class="reviews-item">
             <div class="reviews-content-wrap">
               <img src="img/otsyv/Agapiew.jpg" alt="Агапьев" class="review-img">
-              <h3 class="review-author">Кирилл Агапьев</h3>
+              <div class="reviews-customer">
+                <h3 class="review-author">Кирилл Агапьев</h3>
+                <p class="review-amount">Купил 35 книг</p>
+              </div>
             </div>
-            <p class="review-amount">Купил 35 книг</p>
             <p class="review-text">Огромный ассортимент разных книг, которых нет в магазинах нашего
-              города.<br>Цены зачастую гораздо ниже магазинских, так плюс к этому ещё и постоянные большие
+              города. Цены зачастую гораздо ниже магазинских, так плюс к этому ещё и постоянные большие
               скидки!</p>
           </li>
           <li class="reviews-item">
             <div class="reviews-content-wrap">
               <img src="img/otsyv/Mariina.jpg" alt="Марьина" class="review-img">
-              <h3 class="review-author">Елизавета Марьина</h3>
+              <div class="reviews-customer">
+                <h3 class="review-author">Елизавета Марьина</h3>
+                <p class="review-amount">Купила 76 книг</p>
+              </div>
             </div>
-            <p class="review-amount">Купила 76 книг</p>
             <p class="review-text">Удобная навигация, большой выбор, книги в подарок при определенной сумме
               заказа. Заказ собирают без ошибок, привозят без задержек</p>
           </li>
-          <li class="review-item">
+          <li class="reviews-item">
             <div class="reviews-content-wrap">
               <img src="img/otsyv/Alenicheva.jpg" alt="Аленичева" class="review-img">
-              <h3 class="review-author">Полина Аленичева</h3>
+              <div class="reviews-customer">
+                <h3 class="review-author">Полина Аленичева</h3>
+                <p class="review-amount">Купила 17 книг</p>
+              </div>
             </div>
-            <p class="review-amount">Купила 17 книг</p>
             <p class="review-text">Удобный каталог, полезные отзывы на книги, так же есть видеообзоры на
               книги. Иногда можно приобрести дорогое издание за «символическую» цену.</p>
           </li>
@@ -326,7 +363,7 @@
     <section class="about-us">
       <div class="container">
         <h2 class="about-us-title">О нас</h2>
-        <ul class="about-us">
+        <ul class="about-us-list">
           <li class="about-us-item">
             <h3 class="about-us-slogan">По полочкам — крупнейший книжный интернет магазин</h3>
             <p class="about-us-text">Мы предлагаем большой выбор книг, поддерживая длительные
