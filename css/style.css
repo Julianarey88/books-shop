@@ -400,20 +400,13 @@ body {
 }
 
 .book-text {
-  /* min-height: 63px; */
-  /* margin-bottom: 20px; */
-  /* font-family: 'PT Astra Sans', sans-serif; */
   font-size: 16px;
   line-height: 21px;
-  /* color: #37393E; */
 }
 
 .book-buttons-wrap {
   display: flex;
-  /* flex-direction: row; и так по дефолту */
-  /* justify-content: center; */
   align-items: center;
-  /* padding: 1px 10px 3px; */
   border-radius: 2px;
 }
 
@@ -421,12 +414,10 @@ body {
   margin-right: 10px;
   border-radius: 2px;
   padding: 1px 10px 3px 10px;
-  /* font-family: 'PT Astra Sans', sans-serif; */
   font-size: 16px;
   line-height: 21px;
   color: #fff;
-  background-color: #3971FF;
-  /* color: #FFFFFF; */
+  background-color: hsl(223, 100%, 61%);
   transition: background-color, .3s;
 }
 
@@ -435,9 +426,6 @@ body {
 }
 
 .books-pages {
-  /* font-family: 'PT Astra Sans', sans-serif; */
-  /* font-style: normal; */
-  /* font-weight: normal; */
   font-size: 14px;
   line-height: 16px;
   color: #BFBFBF;
@@ -466,65 +454,6 @@ body {
   row-gap: 40px;
 }
 
-
-/* .book-img {
-  margin-bottom: 18px;
-} */
-
-/* .book-author {
-  margin-left: 14px;
-  font-family: 'PT Astra Sans', sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #BFBFBF;
-} */
-
-/* .book-title {
-  margin-bottom: 5px;
-  font-family: 'PT Astra Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  color: #3971FF;
-} */
-
-/* .book-text {
-  min-height: 63px;
-  margin-bottom: 20px;
-  font-family: 'PT Astra Sans', sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-  color: #37393E;
-} */
-
-/* .book-buttons-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1px 10px 3px;
-  background: #3971FF;
-  border-radius: 2px;
-} */
-
-/* .book-link {
-  font-family: 'PT Astra Sans', sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-} */
-
-/* .books-pages {
-  margin-left: 10px;
-  font-family: 'PT Astra Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #BFBFBF;
-} */
-
 .reviews-title {
   margin-bottom: 40px;
   font-family: 'Podkova', serif;
@@ -539,12 +468,10 @@ body {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: column; */
-  /* column-gap: 60px; */
+  
 }
 
 .reviews-item {
-  /* position: relative; */
   border-radius: 4px;
   padding: 20px 25px 24px 20px;
   width: 380px;
@@ -561,19 +488,14 @@ body {
 .review-img {
   margin-right: 15px;
   border-radius: 50%;
-  /* position: static; */
   width: 80px;
   height: 80px;
-  /* left: 0px; */
-  /* top: 0px; */
+ 
 
 }
 
 .review-author {
-  /* margin-left: 10px; */
-  /* font-family: 'PT Astra Sans', sans-serif; */
-  /* font-style: normal; */
-  /* font-weight: bold; */
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -581,28 +503,13 @@ body {
 }
 
 .review-amount {
-  /* margin-bottom: 26px; */
-  /* font-family: 'PT Astra Sans', sans-serif; */
-  /* font-style: normal; */
-  /* font-weight: normal; */
-  /* font-size: 16px;
-  line-height: 21px; */
+
   color: #BFBFBF;
 }
 
-/* .review-text {
-  font-family: 'PT Astra Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  color: #37393E;
-} */
-
 .about-us {
   margin-bottom: 90px;
-  /* flex-wrap: column; */
-  /* column-gap: 120px; */
+ 
 }
 
 .about-us-title {
@@ -620,7 +527,7 @@ body {
 }
 
 .about-us-item {
-  /* position: relative; */
+
   border-radius: 4px;
   padding: 16px 80px 21px 20px;
   width: 590px;
@@ -631,23 +538,12 @@ body {
 .about-us-slogan {
   margin-bottom: 12px;
   width: 327px;
-  /* font-family: 'PT Astra Sans', sans-serif; */
-  /* font-style: normal; */
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #3971FF;
 }
 
-/* .about-us-text {
-  margin-bottom: 110px;
-  font-family: 'PT Astra Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  color: #37393E;
-} */
 
 .footer {
   background: #37393E;
