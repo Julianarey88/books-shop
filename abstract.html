@@ -32,7 +32,6 @@
         </div>
         <div class="search-box">
           <form class="search-form" action="#">
-            <!-- пропущен был class -->
             <input class="search-input" type="text" placeholder="Поиск по полке">
             <button class="search-btn" type="submit">
               <img class="search-btn-icon" src="img/icons/Search.svg" alt="иконка поиска">
@@ -53,10 +52,10 @@
           <nav class="nav">
             <ul class="header-nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="#">Главная</a>
+                <a class="nav-link" href="index.html">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Каталог книг</a>
+                <a class="nav-link" href="catalog.html">Каталог книг</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Оплата и доставка</a>
@@ -80,7 +79,31 @@
     </div>
   </header>
   <main>
-
+ <!-- === BREADCRUMBS === -->
+ <div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__inner">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item">
+          <a href="index.html">
+            Главная страница
+          </a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="catalog.html">
+            Каталог книг
+          </a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>
+              Железный король
+            </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- === / BREADCRUMBS === -->
 
   </main>
 
