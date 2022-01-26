@@ -1,4 +1,8 @@
 $(function () {
+  // === CATALOG ASIDE (Form Styler JQ) ===
+  $('.styler').styler();
+  // === / CATALOG ASIDE (Form Styler JQ) ===
+
   // === PROMO-SLIDER (slick JQ) ===
   $('.promo-slider__wrapper').slick({
     infinite: true,
