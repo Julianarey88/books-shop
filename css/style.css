@@ -468,7 +468,7 @@ body {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .reviews-item {
@@ -490,7 +490,7 @@ body {
   border-radius: 50%;
   width: 80px;
   height: 80px;
- 
+
 
 }
 
@@ -509,7 +509,7 @@ body {
 
 .about-us {
   margin-bottom: 90px;
- 
+
 }
 
 .about-us-title {
@@ -643,7 +643,16 @@ body {
 
 .catalog-books-aside {
   margin-right: 30px;
+  padding: 25px;
   min-width: 250px;
+  background-color: #fff;
+}
+
+.aside-title {
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 /* === FOOTER === */
