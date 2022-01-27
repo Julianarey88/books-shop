@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-BOOK</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css"> -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!--header-->
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header__inner-box">
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+          <address class="address"> г. Санкт-Петербург, <br>
+            наб. Pеки Карповки, 5 корпус П
+          </address>
+        </div>
+        <div class="search-box">
+          <form class="search-form" action="#">
+            <input class="search-input" type="text" placeholder="Поиск по полке">
+            <button class="search-btn" type="submit">
+              <img class="search-btn-icon" src="img/icons/Search.svg" alt="иконка поиска">
+            </button>
+          </form>
+          <div class="cart">
+            <a class="cart-btn" href="#">
+              <img class="cart-icon" src="img/icons/Bag.svg" alt="иконка шоппер">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-inner">
+          <nav class="nav">
+            <ul class="header-nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Каталог книг</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Оплата и доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="user-menu-items">
+            <li class="user-menu-item">
+              <a href="#" class="user-menu-link">Регистрация</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="#" class="user-menu-link user-menu-link--enter">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- === BREADCRUMBS === -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a href="index.html">
+                Главная страница
+              </a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <span>
+                Каталог книг
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- === / BREADCRUMBS === -->
+
+    <!-- === CATALOG-BOOKS === -->
+    <section class="catalog-books">
+      <div class="container">
+        <h1 class="catalog-books-title">Каталог книг</h1>
+        <div class="catalog-books-inner">
+          <aside class="catalog-books-aside">
+            <h2 class="aside-title">Категория</h2>
+            <ul class="aside-list">
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Художественная литература
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Книги для детей
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox" checked>
+                  <span class="aside-checkbox-btn"></span>
+                  Образование
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Наука и техника
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Общество
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Деловая литература
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Здоровье
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox" checked>
+                  <span class="aside-checkbox-btn"></span>
+                  Увлечение
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Психология
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Эзотерика
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Философия и религия
+                </label>
+              </li>
+              <li class="aside-list-item"></li>
+              <label class="aside-list-label">
+                <input class="aside-list-check-box" type="checkbox" checked>
+                <span class="aside-checkbox-btn"></span>
+                Искусство
+              </label>
+              </li>
+            </ul>
+
+            <h2 class="aside-title">Статус</h2>
+            <ul class="aside-list">
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="status">
+                  <span class="aside-radio-btn"></span>
+                  Хиты продаж
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="status" checked>
+                  <span class="aside-radio-btn"></span>
+                  Новинки
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="status">
+                  <span class="aside-radio-btn"></span>
+                  Предзаказы
+                </label>
+              </li>
+            </ul>
+
+            <ul class="aside-list">
+              <h2 class="aside-title">Наличие</h2>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="available">
+                  <span class="aside-radio-btn"></span>
+                  В магазине
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="available" checked>
+                  <span class="aside-radio-btn"></span>
+                  В интернет-магазине
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="available">
+                  <span class="aside-radio-btn"></span>
+                  Под заказ
+                </label>
+              </li>
+            </ul>
+          </aside> <!-- /.catalog-books-aside -->
+
+          <ul class="books-list">
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">3.8</span>
+              </div>
+              <img src="img/catalog/King.jpg" width="221" height="221" alt="King" class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Кагава Д.</p>
+                  <h2 class="catalog-book-title">Железный король</h2>
+                  <p class="book-text">Меган удалось победить Железного короля, и теперь она во Дворце
+                  </p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">416 страниц</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">4.2</span>
+              </div>
+              <img src="img/catalog/Lisiya nora.jpg" width="221" height="221" alt="nora" class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Сакавич Н.</p>
+                  <h2 class="catalog-book-title">Лисья нора</h2>
+                  <p class="book-text">Команда Лисов—игроки экси, которые пытаются выиграть чемпионат мира</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">336 страниц</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">4.5</span>
+              </div>
+              <img src="img/catalog/Prosto masa.jpg" width="221" height="221" alt="Prosto masa"
+                class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Акунин Б..</p>
+                  <h2 class="catalog-book-title">Просто маса</h2>
+                  <p class="book-text">Масу ожидают невероятные потрясения и невероятные приключения</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">448 страниц</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">3.9</span>
+              </div>
+              <img src="img/catalog/Green light.jpg" width="221" height="221" alt="Green light"
+                class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Макконахи М./p>
+                    <h2 class="catalog-book-title">Зеленый свет</h2>
+                    <p class="book-text">Как быть честным. Как избежать стресса. Как радоваться жизни</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">320 страниц</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">3.5</span>
+              </div>
+              <img src="img/catalog/Solnce.jpg" width="221" height="221" alt="Solnce" class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Майер С.</p>
+                  <h2 class="catalog-book-title">Солнце полуночи</h2>
+                  <p class="book-text">История любви и приключений от лица Эдварда</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">784 страницы</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">4.4</span>
+              </div>
+              <img src="img/catalog/Uve.jpg" width="221" height="221" alt="Uve" class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Бакман Ф.</p>
+                  <h2 class="catalog-book-title">Вторая жизнь Уве</h2>
+                  <p class="book-text">Откуда берутся зануды и склочники? Внутри зреет обида на мир</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">384 страницы</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">3.9</span>
+              </div>
+              <img src="img/catalog/Istrebitel.jpg" width="221" height="221" alt="Istrebitel" class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Быков Д.</p>
+                  <h2 class="catalog-book-title">Истребитель</h2>
+                  <p class="book-text">Роман о советских летчиках, "соколах Сталина"</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">576 страниц</p>
+                </div>
+            </li>
+            <li class="books-list-item">
+              <div class="book-rating">
+                <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
+                <span class="book-rating-value">4.1</span>
+              </div>
+              <img src="img/catalog/Lavr.jpg" width="221" height="221" alt="lavr" class="catalog-book-img">
+              <div class="catalog-book-info">
+                <div class="book-info-box">
+                  <p class="book-author">Водолазкин Е.</p>
+                  <h2 class="catalog-book-title">Лавр</h2>
+                  <p class="book-text">Возможно ли любовью и жертвой спасти душу человека?</p>
+                </div>
+                <div class="book-buttons-wrap">
+                  <a href="#" class="book-link">Подробнее</a>
+                  <p class="books-pages">448 страниц</p>
+                </div>
+            </li>
+          </ul>
+        </div> <!-- /.catalog-books-inner -->
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__list-item active">
+              <span>
+                1
+              </span>
+            </li>
+            <li class="pagination__list-item">
+              <a class="pagination__list-link" href="catalog-page-2.html">
+                2
+              </a>
+            </li>
+            <li class="pagination__list-item">
+              <a class="pagination__list-link" href="catalog-page-3.html">
+                3
+              </a>
+            </li>
+            <li class="pagination__list-item">
+              <a class="pagination__list-link" href="catalog-page-4.html">
+                4
+              </a>
+            </li>
+            <li class="pagination__list-item">
+              <a class="pagination__link-next" href="catalog-page-2.html">
+                <img class="pagination__img-next" src="img/icons/arrow-right.svg" alt="иконка стрелка вправо">
+              </a>
+            </li>
+          </ul>
+        </div> <!-- /.pagination -->
+      </div>
+    </section>
+    <!-- === / CATALOG-BOOKS === -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-social">
+          <a class="footer-logo-link" href="#">
+            <!-- <span class="visually-hidden"></span> -->
+            <img src="img/footer icons/logoF.svg" alt="logo">
+          </a>
+          <ul class="social-button-list">
+            <li class="social-button-item">
+              <a class="icon-link" href="#">
+                <img src="img/footer icons/insta.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="social-button-item">
+              <a class="icon-link" href="#">
+                <img src="img/footer icons/telegram.svg" alt="telegram">
+              </a>
+            </li>
+            <li class="social-button-item">
+              <a class="icon-link" href="#">
+                <img src="img/footer icons/vk.svg" alt="vk">
+              </a>
+            </li>
+            <li class="social-button-item">
+              <a class="icon-link" href="#">
+                <img src="img/footer icons/youtube.svg" alt="youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inner-right-box">
+          <div class="footer-block">
+            <h3 class="nav-title">Меню</h3>
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="nav-link" href="catalog.html">Каталог книг</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Оплата и доставка</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h3 class="footer-title">Интересно</h3>
+            <ul class="footer-list">
+              <li>
+                <a class="footer-link" href="#">Новости</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Акция</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Блог</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Скидка</a>
+              </li>
+          </div>
+          </ul>
+          <div class="footer-block">
+            <h3 class="footer-title">Важно</h3>
+            <ul class="footer-list">
+              <li>
+                <a class="footer-link" href="#">Возврат</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Сертификаты</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Предзаказы</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Конкурсы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block">
+            <h3 class="footer-title">Адрес</h3>
+            <ul class="footer-list-item-address">
+              <li>
+                <address class="footer-list-address">г. Санкт-Петербург,<br>
+                  наб. Pеки Карповки, 5 корпус П</address>
+              </li>
+              <li>
+                <a class="footer-link" href="tel:+78005558628">+7 800 555 86 28</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p>© ООО «Интерактивные обучающие технологии», 2013−2021</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- === JAVASCRIPT === -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script> -->
+
+  <script src="js/main.js"></script>
+  <!-- === / JAVASCRIPT === -->
+
+</body>
+
+</html

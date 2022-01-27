@@ -1,0 +1,3 @@
+TODO: сделать select в правом верхнем углу catalog.html
+
+TODO: сделать ховерные эффекты catalog.html
