@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css"> -->
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -111,55 +111,87 @@
               <li class="aside-list-item">
                 <label class="aside-list-label">
                   <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
                   Художественная литература
                 </label>
               </li>
               <li class="aside-list-item">
                 <label class="aside-list-label">
                   <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
                   Книги для детей
                 </label>
               </li>
-              <label>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox" checked>
+                  <span class="aside-checkbox-btn"></span>
+                  Образование
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Наука и техника
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Общество
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Деловая литература
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Здоровье
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox" checked>
+                  <span class="aside-checkbox-btn"></span>
+                  Увлечение
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Психология
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Эзотерика
+                </label>
+              </li>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-check-box" type="checkbox">
+                  <span class="aside-checkbox-btn"></span>
+                  Философия и религия
+                </label>
+              </li>
+              <li class="aside-list-item"></li>
+              <label class="aside-list-label">
                 <input class="aside-list-check-box" type="checkbox" checked>
-                <li class="aside-list-item">Образование</li>
+                <span class="aside-checkbox-btn"></span>
+                Искусство
               </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox">
-                <li class="aside-list-item"><a href="/service-1/">Наука и техника</a></li>
-              </label>
-              <label>
-                <input type="aside-list-checkbox">
-                <li class="aside-list-item"><a href="/service-2/">Общество</a></li>
-              </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox">
-                <li class="aside-list-item"><a href="/service-3/">Деловая литература</a></li>
-              </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox">
-                <li class="aside-list-item"><a href="/service-1/">Здоровье</a></li>
-              </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox" checked>
-                <li class="aside-list-item"><a href="/service-2/">Увлечение</a></li>
-              </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox">
-                <li class="aside-list-item"><a href="/service-3/">Психология</a></li>
-              </label>
-              <label>
-                <input class="check-box" type="checkbox">
-                <li class="aside-list-item"><a href="/service-1/">Эзотерика</a></li>
-              </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox">
-                <li class="aside-list-item"><a href="/service-2/">Философия и религия</a></li>
-              </label>
-              <label>
-                <input class="aside-list-check-box" type="checkbox" checked>
-                <li class="aside-list-item"><a href="/service-3/">Искусство</a></li>
-              </label>
+              </li>
             </ul>
 
             <h2 class="aside-title">Статус</h2>
@@ -171,21 +203,22 @@
                   Хиты продаж
                 </label>
               </li>
-              <li class="aside-list-item"></li>
-              <label>
-                <input class="aside-list-radio" type="radio" name="status" checked>
-                <span class="aside-radio-btn"></span>
-                Новинки
-              </label>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
+                  <input class="aside-list-radio" type="radio" name="status" checked>
+                  <span class="aside-radio-btn"></span>
+                  Новинки
+                </label>
               </li>
               <li class="aside-list-item">
-                <label>
+                <label class="aside-list-label">
                   <input class="aside-list-radio" type="radio" name="status">
                   <span class="aside-radio-btn"></span>
                   Предзаказы
                 </label>
               </li>
             </ul>
+
             <ul class="aside-list">
               <h2 class="aside-title">Наличие</h2>
               <li class="aside-list-item">
@@ -196,14 +229,14 @@
                 </label>
               </li>
               <li class="aside-list-item">
-                <label>
+                <label class="aside-list-label">
                   <input class="aside-list-radio" type="radio" name="available" checked>
                   <span class="aside-radio-btn"></span>
                   В интернет-магазине
                 </label>
               </li>
-              <li>
-                <label>
+              <li class="aside-list-item">
+                <label class="aside-list-label">
                   <input class="aside-list-radio" type="radio" name="available">
                   <span class="aside-radio-btn"></span>
                   Под заказ
@@ -357,6 +390,7 @@
     <!-- === / CATALOG-BOOKS === -->
 
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
@@ -467,7 +501,7 @@
   <!-- === JAVASCRIPT === -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script> -->
 
   <script src="js/main.js"></script>
   <!-- === / JAVASCRIPT === -->
