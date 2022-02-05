@@ -754,6 +754,101 @@ body {
   color: #3971FF;
 }
 
+/* === / CATALOG === */
+
+/* === DETAILS === */
+.details {
+  margin: 15px 0 70px;
+}
+
+.details-inner {
+  display: flex;
+}
+
+.book-img {
+  display: block;
+}
+
+.details-book .book-rating {
+  position: static;
+  background-color: transparent;
+}
+
+.details-book .book-rating-value {
+  margin-right: 6px;
+  color: #3971ff;
+}
+
+.details-book .grade {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bfbfbf;
+}
+
+.details-book-title {
+  margin-bottom: 7px;
+  font-family: 'Podkova', serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 60px;
+}
+
+.details-book-author {
+  margin-bottom: 30px;
+  color: #3971ff;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.details-book-info-box {
+  padding-top: 15px;
+  border-top: 1px solid #BFBFBF;
+  display: flex;
+}
+
+.details-book-info-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.details-book-inner {
+  border-top: 1px solid #BFBFBF;
+  padding-top: 15px;
+  display: flex;
+}
+
+.details-book-information-box {
+  margin-right: 40px;
+}
+
+.details-book-table-box {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.details-book-table-name {
+  width: 110px;
+  color: #bfbfbf;
+}
+
+.details-book-table-value {
+  margin-left: 20px;
+  width: 140px;
+  text-align: left;
+}
+
+/* === / DETAILS === */
+
+/* === (abstract) best-books === */
+.book-details .best-books {
+  margin-bottom: 90px;
+}
+
+/* === / (abstract) best-books === */
+
 /* === PAGINATION === */
 .pagination {
   margin-bottom: 90px;
