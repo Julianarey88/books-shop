@@ -78,7 +78,8 @@
     </div>
     </div>
   </header>
-  <main>
+
+  <main class="book-details">
     <!-- === BREADCRUMBS === -->
     <div class="breadcrumbs">
       <div class="container">
@@ -109,7 +110,7 @@
     <section class="details">
       <div class="container">
         <div class="details-inner">
-          <img class="book-img" src="img/abstract/kagawa-juli-iron-king.jpg" width="485" height="550"
+          <img class="book-img" src="img/book-details/kagawa-juli-iron-king.jpg" width="485" height="550"
             alt="обложка книги Железный король">
           <div class="details-book">
             <div class="book-rating">
@@ -188,7 +189,7 @@
         <ul class="reviews-list">
           <li class="reviews-item">
             <div class="reviews-content-wrap">
-              <img src="img/abstract/Ivanov A.jpg" alt="Иванов" class="review-img">
+              <img src="img/revies/ivanov.jpg" alt="Иванов" class="review-img">
               <div class="reviews-customer">
                 <h3 class="review-author">Алексей Иванов</h3>
                 <p class="review-amount">Купил 23 книги</p>
@@ -199,7 +200,7 @@
           </li>
           <li class="reviews-item">
             <div class="reviews-content-wrap">
-              <img src="img/abstract/Kirillova.jpg" alt="Кириллова" class="review-img">
+              <img src="img/revies/kirillova.jpg" alt="Кириллова" class="review-img">
               <div class="reviews-customer">
                 <h3 class="review-author">Анна Кириллова</h3>
                 <p class="review-amount">Купила 50 книг</p>
@@ -210,7 +211,7 @@
           </li>
           <li class="reviews-item">
             <div class="reviews-content-wrap">
-              <img src="img/abstract/Nagaeva.jpg" alt="Нагаева" class="review-img">
+              <img src="img/revies/nagaeva.jpg" alt="Нагаева" class="review-img">
               <div class="reviews-customer">
                 <h3 class="review-author">Мария Нагаева</h3>
                 <p class="review-amount">Купила 8 книг</p>
@@ -224,9 +225,9 @@
     </section>
 
     <!-- Секция Новинки книг (каталог)-->
-    <section class="books">
+    <section class="best-books">
       <div class="container">
-        <h2 class="new-books-title">Вы недавно смотрели</h2>
+        <h2 class="best-books-title">Лучшее</h2>
         <ul class="books-list">
           <!--первая книга-->
           <li class="book">
@@ -236,16 +237,17 @@
             </div>
             <!--рейтинг-->
             <!--картинка-->
-            <img class="book-img" src="img/abstract/Istrebitel.jpg" width="275" height="320" alt="Истребитель">
+            <img src="img/book-details/istrebitel.jpg" width="275" height="320" alt="Истребитель" class="book-img">
             <div class="book-info">
               <div class="book-info-box">
                 <p class="book-author">Быков Д.</p>
                 <h2 class="book-title">Истребитель</h2>
-                <p class="book-text">Роман о советских летчиках, "соколах Сталина"
+                <p class="book-text">
+                  Роман о советских летчиках, "соколах Сталина"
                 </p>
               </div>
               <div class="book-buttons-wrap">
-                <a class="book-link" href="#">Подробнее</a>
+                <a href="#" class="book-link">Подробнее</a>
                 <p class="books-pages">576 страниц</p>
               </div>
             </div>
@@ -256,13 +258,14 @@
               <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.1</span>
             </div>
-            <img src="img/abstract/shame.jpg" width="275" height="320" alt="Чувство стыда" class="book-img">
+            <img class="book-img" src="img/book-details/shame.jpg" width="275" height="320" alt="Чувство стыда">
             <div class="book-info">
               <div class="book-info-box">
                 <p class="book-author">Санд И.</p>
                 <h2 class="book-title">Чувство стыда</h2>
-                <p class="book-text">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать с
-                  близкими</p>
+                <p class="book-text">
+                  Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать с близкими
+                </p>
               </div>
               <div class="book-buttons-wrap">
                 <a href="#" class="book-link">Подробнее</a>
@@ -276,18 +279,18 @@
               <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">4.4</span>
             </div>
-            <img src="img/abstract/Uve.jpg" width="275" height="320" alt="Transhumanism inc." class="book-img">
+            <img class="book-img" src="img/book-details/uve.jpg" width="275" height="320" alt="Вторая жизнь Уве">
             <div class="book-info">
               <div class="book-info-box">
                 <p class="book-author">Несбё Ю.</p>
                 <h2 class="book-title">Вторая жизнь Уве</h2>
-                <p class="book-text">Откуда берутся зануды
-                  и склочники? Внутри зреет обида
-                  на мир</p>
+                <p class="book-text">
+                  Откуда берутся зануды и склочники? Внутри зреет обида на мир
+                </p>
               </div>
               <div class="book-buttons-wrap">
                 <a href="#" class="book-link">Подробнее</a>
-                <p class="books-pages">384 страницы</p>
+                <p class="books-pages">384 страниц</p>
               </div>
             </div>
           </li>
@@ -297,12 +300,15 @@
               <img src="img/icons/star.svg" class="book-rating-img" alt="Иконка звездочки">
               <span class="book-rating-value">3.9</span>
             </div>
-            <img src="img/abstract/transhumanism.jpg" width="275" height="320" alt="Трансгуманизм" class="book-img">
+            <img class="book-img" src="img/book-details/transhumanism.jpg" width="275" height="320"
+              alt="Transhumanism inc.">
             <div class="book-info">
               <div class="book-info-box">
                 <p class="book-author">Пелевин В.</p>
                 <h2 class="book-title">Transhumanism inc.</h2>
-                <p class="book-text">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+                <p class="book-text">
+                  В будущем богатые люди смогут отделить свой мозг от старящегося тела
+                </p>
               </div>
               <div class="book-buttons-wrap">
                 <a href="#" class="book-link">Подробнее</a>
@@ -310,7 +316,7 @@
               </div>
             </div>
           </li>
-        </ul>
+      </div>
       </div>
     </section>
   </main>
@@ -320,7 +326,6 @@
       <div class="footer-wrapper">
         <div class="footer-social">
           <a class="footer-logo-link" href="#">
-            <!-- <span class="visually-hidden"></span> -->
             <img src="img/footer icons/logoF.svg" alt="logo">
           </a>
           <ul class="social-button-list">
