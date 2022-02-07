@@ -360,7 +360,7 @@ body {
 }
 
 .book-rating {
-  position: absolute;
+ position: absolute;
   top: 6px;
   left: 6px;
   display: inline-block;
@@ -370,6 +370,7 @@ body {
 }
 
 .book-rating-value {
+  
   font-size: 14px;
   line-height: 1;
   color: #fff;
@@ -772,6 +773,8 @@ body {
 .details-book .book-rating {
   position: static;
   background-color: transparent;
+  margin-left: 69px;
+  margin-top: 20px;
 }
 
 .details-book .book-rating-value {
@@ -787,6 +790,7 @@ body {
 }
 
 .details-book-title {
+  margin-left: 69px;
   margin-bottom: 7px;
   font-family: 'Podkova', serif;
   font-weight: 600;
@@ -795,6 +799,7 @@ body {
 }
 
 .details-book-author {
+  margin-left: 69px;
   margin-bottom: 30px;
   color: #3971ff;
   font-size: 24px;
@@ -822,6 +827,7 @@ body {
 
 .details-book-information-box {
   margin-right: 40px;
+  margin-left: 69px;
 }
 
 .details-book-table-box {
